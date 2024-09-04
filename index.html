@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caroline Souza</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script type="module" src="/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="ctn-btn">
+        <button id="downloadButton">
+          <img src="imgs/icon-imprimir.svg" width="20px" height="20px" alt="Botão imprimir">
+        </button>
+      </div>
+      <h1 class="nome">Caroline Souza</h1>
+      <h2 class="cargo">ANALISTA DESENVOLVEDORA FRONT-END PLENO</h2>
+    </header>
+    <main>
+      <section class="infos">
+        <div>
+          <h3>SOBRE MIM</h3>
+          <p>Tenho uma sólida experiência no desenvolvimento front-end, em setor financeiro e outros tipos de serviços com foco em criar interfaces responsivas e otimizadas para diversos dispositivos. Tenho habilidade na integração eficiente de APIs e na aplicação de metodologias ágeis para entregas rápidas e de alta qualidade. Minhas competências incluem JavaScript, Angular, Vue.js, SCSS, Quasar e entre outras, permitindo flexibilidade em diferentes áreas de desenvolvimento. Sou proativa, responsável e apaixonada por trabalho em equipe, sempre buscando aprimoramento contínuo para entregar soluções tecnológicas que superem as expectativas e ajudem a empresa a alcançar seus objetivos.</p>
+        </div>
+        <div>
+          <h3>DETALHES PESSOAIS</h3>
+          <div class="infos__item">
+            <img src="imgs/icon-localizacao.png" alt="Icone localização">
+            <p>São Paulo - SP - Brasil</p>
+          </div>
+          <div class="infos__item">
+            <img src="imgs/icon-email.png" alt="Icone email">
+            <a target="_blank" href="mailto:carol.silvasouza@hotmail.com">carol.silvasouza@hotmail.com</a>
+          </div>
+          <div class="infos__item">
+            <img src="imgs/icon-telefone.png" alt="Icone telefone">
+            <p>(11) 9 8397-3518</p>
+          </div>
+          <div class="infos__item">
+            <img src="imgs/icon-github.png" alt="Icone Github">
+            <a target="_blank" href="https://github.com/caheyes">https://github.com/caheyes</a>
+          </div>
+          <div class="infos__item">
+            <img src="imgs/icon-linkedin.png" alt="Icone LinkedIn">
+            <a target="_blank" href="https://www.linkedin.com/in/caroline-souza-7074a1b4/">https://www.linkedin.com/in/caroline-souza-7074a1b4/</a>
+          </div>
+        </div>
+      </section>
+      <section class="especificacoes">
+        <div class="especificacoes__experiencias">
+          <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+          <ul>
+            <li>
+              <h4 class="especificacoes__experiencias__empresa">Banco Alfa</h4>
+              <div class="especificacoes__experiencias__cargo">
+                <p>ANALISTA DESENVOLVEDORA FRONT-END PLENO</p>
+                <span>Março/2024 - no momento</span>
+              </div>
+              <p class="especificacoes__experiencias__descricao">Criação e manutenção de sistemas web com foco no setor financeiro, otimizando a experiência do usuário em diferentes dispositivos móveis por meio de interfaces responsivas. Implementação de soluções robustas para a integração de APIs, garantindo comunicação eficiente entre diferentes serviços e plataformas. Aplicação de metodologias ágeis (como Scrum e Kanban) para gerenciar projetos, priorizar tarefas e entregar funcionalidades de forma iterativa e contínua. Identificação e correção de bugs na plataforma, aprimorando a estabilidade e performance do sistema. Tecnologias Utilizadas foram JavaScript, Vue.js, Nuxt.js, Angular, HTML5, CSS3, SCSS, Git e Azure.</p>
+            </li>
+            <li>
+              <h4 class="especificacoes__experiencias__empresa">GregHub</h4>
+              <div class="especificacoes__experiencias__cargo">
+                <p>DESENVOLVEDORA FRONT-END JÚNIOR</p>
+                <span>Maio/2022 - Dezembro/2023</span>
+              </div>
+              <p class="especificacoes__experiencias__descricao">Criação de sistemas web divididos em módulos, com interfaces responsivas e integração de APIs. Desenvolvimento de um aplicativo como WebView utilizando Flutter. Correção de bugs e aprimoramento da acessibilidade web. Participação ativa na definição e planejamento de projetos futuros. Integração de gráficos analíticos para aprimorar a funcionalidade e a visualização de dados. Tecnologias Utilizadas foram Vue.js, JavaScript, HTML5, CSS3, SCSS, Bootstrap, Git, Azure, Quasar, Flutter e Dart.</p>
+            </li>
+            <li>
+              <h4 class="especificacoes__experiencias__empresa">Tgroup</h4>
+              <div class="especificacoes__experiencias__cargo">
+                <p>DESENVOLVEDORA FRONT-END JÚNIOR</p>
+                <span>Março/2022 - Maio/2022</span>
+              </div>
+              <p class="especificacoes__experiencias__descricao">Atuava na manutenção e evolução de sistema, garantindo a consistência e a qualidade dos produtos já desenvolvidos, após a transição para um novo CNPJ que se tornou a empresa GregHub.</p>
+            </li>
+            <li>
+              <h4 class="especificacoes__experiencias__empresa">Wiplay</h4>
+              <div class="especificacoes__experiencias__cargo">
+                <p>DESENVOLVEDORA FRONT-END JÚNIOR</p>
+                <span>Junho/2021 - Março/2022</span>
+              </div>
+              <p class="especificacoes__experiencias__descricao">Criação e implementação de sistemas web, contribuindo para a expansão e inovação da plataforma. Garantia da estabilidade da plataforma por meio de manutenção contínua e resolução de problemas. Desenvolvimento de novos módulos e integração de gráficos analíticos para aprimorar a funcionalidade e a visualização de dados. Tecnologias Utilizadas foram HTML5, CSS3, SASS e Vue.js.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="especificacoes__formacoes">
+          <h3>FORMAÇÕES</h3>
+          <ul>
+            <li>
+              <h4 class="especificacoes__formacoes__nome">Análise e desenvolvimento de sistemas</h4>
+              <div class="especificacoes__formacoes__escola">
+                <p>UNIVERSIDADE UNIP</p>
+                <span>Agosto/2019 - Junho/2021</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="especificacoes__formacoes">
+          <h3>CURSOS</h3>
+          <ul>
+            <li>
+              <h4 class="especificacoes__formacoes__nome">Angular</h4>
+              <div class="especificacoes__formacoes__escola">
+                <p>Udemy</p>
+                <span>Em andamento</span>
+              </div>
+            </li>
+            <li>
+              <h4 class="especificacoes__formacoes__nome">Wordpress REST API</h4>
+              <div class="especificacoes__formacoes__escola">
+                <p>Origamid</p>
+                <span>Março 2024</span>
+              </div>
+            </li>
+            <li>
+              <h4 class="especificacoes__formacoes__nome">Dart: Criando e manipulando variáveis e listas</h4>
+              <div class="especificacoes__formacoes__escola">
+                <p>Alura</p>
+                <span>Março 2023</span>
+              </div>
+            </li>
+            <li>
+              <h4 class="especificacoes__formacoes__nome">Vue.js 3</h4>
+              <div class="especificacoes__formacoes__escola">
+                <p>Alura</p>
+                <span>Janeiro 2023</span>
+              </div>
+            </li>
+            <li>
+              <h4 class="especificacoes__formacoes__nome">Vue.js 2</h4>
+              <div class="especificacoes__formacoes__escola">
+                <p>Origamid</p>
+                <span>Dezembro 2022</span>
+              </div>
+            </li>
+            <li>
+              <h4 class="especificacoes__formacoes__nome">Bootstrap 4</h4>
+              <div class="especificacoes__formacoes__escola">
+                <p>Origamid</p>
+                <span>Abril 2022</span>
+              </div>
+            </li>
+            <li>
+              <h4 class="especificacoes__formacoes__nome">Web Design</h4>
+              <div class="especificacoes__formacoes__escola">
+                <p>Origamid</p>
+                <span>Janeiro 2021</span>
+              </div>
+            </li>
+            <li>
+              <h4 class="especificacoes__formacoes__nome">DevOps Essentials Professional Certificate (DEPC)</h4>
+              <div class="especificacoes__formacoes__escola">
+                <p>Certiprof</p>
+                <span>Agosto 2020</span>
+              </div>
+            </li>
+            <li>
+              <h4 class="especificacoes__formacoes__nome">Scrum Foundation Professional Certificate (SFPC)</h4>
+              <div class="especificacoes__formacoes__escola">
+                <p>Certiprof</p>
+                <span>Julho 2020</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="especificacoes__competencias-idiomas">
+          <div class="especificacoes__competencias-idiomas__item">
+            <h3>COMPETÊNCIAS</h3>
+            <div class="especificacoes__competencias-idiomas__ctn">
+              <p>Javascript</p>
+              <p>HTML5</p>
+              <p>CSS3</p>
+              <p>Vue</p>
+              <p>Angular</p>
+              <p>Nuxt</p>
+              <p>SASS</p>
+              <p>Bootstrap</p>
+              <p>Quasar</p>
+            </div>
+          </div>
+          <div class="especificacoes__competencias-idiomas__item">
+            <h3>IDIOMAS</h3>
+            <div class="especificacoes__competencias-idiomas__ctn">
+              <p>Francês Intermediário</p>
+              <p>Inglês Técnico</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

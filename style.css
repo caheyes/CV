@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*variables*/
+:root {
+  --primary: #40E0D0;
+  --primary-transparent: rgba(64, 224, 208, 0.4);
+  --black: #10101a;
+}
+
+/*resets*/
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--black);
+
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  padding: 20px 40px;
+
+  max-width: 1190px;
+  margin: 0 auto;
+}
+
+p, span, h1, h2, h3, h4, a {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: none; /* Remove os marcadores */
+  padding: 0; /* Remove o preenchimento padrão à esquerda */
+  margin: 0; /* Remove a margem padrão */
+}
+
+/*style*/
+
+/* GLOBAIS */ 
+.ctn-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ctn-btn button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+header {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  gap: 30px;
+}
+
+@media print {
+  body {
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+  }
+  header {
+      page-break-after: avoid;
+  }
+
+  .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0;
+  }
+
+  .ctn-btn {
+    display: none;
+  }
+}
+
+.nome {
+  font-size: 5.5rem;
+  font-size: 42px;
+  color: var(--primary);
+}
+
+/* INFORMAÇÕES */ 
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.infos h3,
+.especificacoes__experiencias h3 {
+  margin-bottom: 6px;
+}
+
+.container, .infos__item {
+  overflow: visible; /* Garante que o conteúdo não seja cortado */
+}
+
+.infos__item {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+
+.infos__item p, .infos__item a {
+  margin-left: 8px; /* Espaçamento entre a imagem e o texto */
+}
+
+.infos__item img {
+  width: 12px; /* ou o tamanho desejado */
+  height: 12px;
+  object-fit: contain; /* Garante que a imagem mantenha suas proporções */
+  display: inline-block;
+}
+
+.infos__item a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.infos__item a:hover {
+  text-decoration: underline;
+}
+
+/* ESPECIFICAÇÕES EXPERIÊNCIAS*/ 
+.especificacoes__experiencias {
+  margin-bottom: 30px;
+}
+
+.especificacoes__experiencias__cargo,
+.especificacoes__experiencias__descricao {
+  margin-left:  10px;
+}
+
+.especificacoes__experiencias__cargo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 6px;
+}
+
+.especificacoes__experiencias__cargo p {
+  font-weight: 700;
+}
+
+.especificacoes__experiencias__cargo span {
+  font-size: 12px;
+}
+
+/* ESPECIFICAÇÕES FORMAÇÕES*/ 
+.especificacoes__formacoes {
+  margin-bottom: 30px;
+}
+
+.especificacoes__formacoes h3 {
+  margin-bottom: 6px;
+}
+
+.especificacoes__formacoes__escola {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.especificacoes__formacoes__escola p {
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.especificacoes__formacoes__escola span {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* ESPECIFICAÇÕES COMPETENCIAS E IDIOMAS*/ 
+.especificacoes__competencias-idiomas {
+  display: flex;
+  gap: 80px;
+}
+
+.especificacoes__competencias-idiomas h3 {
+  margin-bottom: 6px;
+}
+
+.especificacoes__competencias-idiomas__item{
+  max-width: 50%;
+}
+
+.especificacoes__competencias-idiomas__ctn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.especificacoes__competencias-idiomas__ctn p {
+  padding: 2px 8px;
+  background-color: #ddd;
+  border-radius: 7px;
+}
+
+/* COMPONENTE DE TIMELINE*/
+.especificacoes__experiencias ul,
+.especificacoes__formacoes ul {
+  position: relative;
+}
+
+.especificacoes__experiencias ul li,
+.especificacoes__formacoes ul li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.especificacoes__experiencias ul li::before,
+.especificacoes__formacoes ul li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 9px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--primary-transparent);
+}
+.especificacoes__experiencias ul li:last-child::before,
+.especificacoes__formacoes ul li:last-child::before {
+  height: 0%; /* Deixa a linha da última li mais curta */
+}
+
+.especificacoes__experiencias ul li h4,
+.especificacoes__formacoes  ul li h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  position: relative;
+  padding-left: 10px;
+  padding-bottom: 6px;
+  color: var(--primary); /* Cor do título */
+}
+
+.especificacoes__experiencias ul li h4::before,
+.especificacoes__formacoes  ul li h4::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top:39%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary); /* Cor do ponto */
+  border-radius: 50%;
+}
+
+
